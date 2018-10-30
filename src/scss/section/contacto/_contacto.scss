@@ -1,0 +1,41 @@
+
+.seccion-contacto {
+    margin-top: 20px;
+    background: map-get($base, 'base-ofertas');
+    padding: 10px 10px;
+
+
+    .flex-grid {
+        &__col--sm {
+            margin: 0;
+            border-radius: 0;
+            color: map-get($base, 'base-black');
+        }
+    }
+    form .error {
+        border: 1px solid map-get($base, 'base-rojo');
+    }
+    // uso de id y de !important debido a sobreescribir el framework de validacion
+    #email-error {
+        display: none !important;
+    }
+
+    .separador {
+        width: 1px;
+        margin: 25px 0;
+        background: map-get($base, 'base-black');
+        flex: 0 1 auto;
+    }
+}
+
+h2.seccion-contacto {
+    margin: 5px 0 5px 20px;
+    color:  map-get($nav, 'color-active');
+    background-color: map-get($base, 'base-background-color');
+    font-weight: normal;
+
+    @include media('<=tablet') {
+        text-align: center;
+        margin: 5px 0;
+    }
+}

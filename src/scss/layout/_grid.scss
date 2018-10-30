@@ -1,0 +1,75 @@
+// row
+.flex-grid {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+// columnasas
+.flex-grid > * {
+    flex: 1;
+    margin: 0;
+    &--gap  {
+        margin: 0 10px;
+
+    }
+    // Mitad de las columnas
+    &.flex-grid__col {
+        flex-grow: 6;
+    }
+    // 1/4 de las columnas
+    &.flex-grid__col--sm {
+        flex-grow: 5;
+    }
+
+    // 3/4 del width de las columnas
+    &.flex-grid__col--md {
+        flex-grow: 7;
+    }
+
+    // Columna entera
+    &.flex-grid__col--lg{
+        flex-grow: 12;
+    }
+
+    &:first-child{
+        margin-left: 0rem;
+    }
+
+    &:last-child{
+        margin-right: 0rem;
+    }
+    .nowrap  {
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+
+@include media('<=desktop') {
+    // He decidido no romper las columnas por que queda mejor?
+    //.flex-grid {
+    //    //display: block;
+    //}
+    &.flex-grid__col, &.flex-grid__col--sm, .flex-grid__col--md {
+        //display: block;
+        padding: 0;
+        margin-left: 0;
+    }
+}
+
+@include media('>=desktop') {
+    //.flex-grid--lg{
+    //    display: block;
+    //}
+
+    .flex-grid--lg > * {
+        padding-left: 0;
+        padding-right: 0;
+
+        &.flex-grid__col {
+            margin-left: 0;
+        }
+    }
+}
+
+

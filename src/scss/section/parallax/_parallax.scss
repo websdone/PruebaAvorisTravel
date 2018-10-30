@@ -1,0 +1,40 @@
+/* Parallax */
+
+.efecto-parallax {
+    /* Imagen */
+    background-image: url("../imagenes/parallax/parallax1.jpg");
+
+    /* altura */
+    height: 150px;
+
+    /*  effecto parallax  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding: 20px;
+    color: white;
+
+    article {
+        padding: 0  20px;
+        width: 20%;
+    }
+    &__titulo {
+        margin: 10px 0 0;
+    }
+    &__cta {
+        height: 25px;
+        background-color: map-get($botones, 'bg-color');
+        border: 1px solid map-get($botones, 'btn-color-border');
+        width: map-get($botones, 'btn-width');
+    }
+    &__sub, &__precio {
+        font-size: map-deep-get($headings, 'sizes', 'h1-font-size');
+        padding: 6px 0 6px;
+        margin: 0;
+    }
+    &__precio {
+        margin-top: 20px;
+    }
+}

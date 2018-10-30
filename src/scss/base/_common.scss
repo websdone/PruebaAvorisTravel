@@ -1,0 +1,41 @@
+/* common style */
+
+.pagina {
+    @include font-smoothing(on);
+    color: map-get($base, 'base-text-color');
+    background: map-get($base, 'base-background-color');
+    font: 300 #{map-get($base, 'base-font-size')}/#{map-get($base, 'base-line-height')} #{map-get($base, 'base-font-sans-serif')};
+    min-width: map-get($base, base-min-width);
+    padding: 0;
+    margin: 0;
+    h1 {
+        margin: 0;
+    }
+    @include media('>=tablet') {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__container {
+        @extend %clearfix;
+        max-width: 1024px;
+        padding: 15px 0;
+        margin: 0 auto;
+        position: relative;
+        @include media('>=tablet') {
+            padding: 40px 0;
+        }
+        @include media('>=desktop') {
+            padding: 65px 0;
+        }
+        a {
+            color: map-get($base, 'base-link-color');
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
+

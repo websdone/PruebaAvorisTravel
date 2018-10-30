@@ -1,0 +1,28 @@
+
+form {
+    padding: 10px 15px;
+    color: map-get($base, 'base-black');
+
+    label,
+    input,
+    button {
+        border: 0;
+        margin-bottom: 3px;
+        display: block;
+        width: 100%;
+    }
+    input {
+        line-height: 25px;
+        border: 1px solid gray;
+        color: gray;
+        padding: 0 6px;
+    }
+    button {
+        height: 30px;
+        line-height: 30px;
+        background:gray;
+        color: gray;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,102 @@
+
+nav {
+    display: flex;
+    &.menu-responsive {
+        @extend %listreset;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 15px;
+        @include media('>=tablet') {
+            .main-content {
+                width: 100%;
+                text-align: right;
+            }
+        }
+    }
+    .menu {
+        &__item {
+            @include media('>=tablet') {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 0 0 10px;
+                line-height: 45px;
+            }
+            @include media('>=desktop') {
+                margin: 0 0 0 23px;
+                line-height: 45px;
+            }
+        }
+        &__link {
+            @include animate (color);
+            text-decoration: none;
+            display: block;
+            color: map-get($nav, 'base-link-color');
+            font-weight: bold;
+
+            &:hover,
+            &.menu__link_active {
+                color: map-get($nav, 'color-active');
+            }
+        }
+    }
+    input {
+        display: none;
+    }
+}
+
+
+@include media('<=tablet') {
+    header {
+        position: absolute;
+    }
+    .menu-responsive {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        &__main {
+            z-index: 9;
+            padding: 0 90px;
+            position: absolute;
+            background:  map-get($base, 'base-background-color');
+            border: 1px solid  map-get($base, 'base-link-color');
+            top: 75px;
+            right: 0px;
+            height: auto;
+            transition: right 0.5s ease-in-out;
+        }
+        ul {
+            margin: 20px 0;
+            padding: 0;
+        }
+        li {
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            margin: 0;
+            float: none;
+            list-style-type: none;
+        }
+        input#toggle {
+            display: none;
+        }
+        input#toggle + label {
+            width: 20%;
+            height: 75px;
+            background: url("../imagenes/menu.png")  center right no-repeat ;
+            position: absolute;
+            right: 13px;
+            top: 2px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        // Transiccion del efecto al abrir el menu mobil
+        input#toggle:checked ~ .main-content {
+            right: -400px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+
+.header {
+	position:absolute;
+    background: map-get($nav, 'color-nav');
+	z-index: 1;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px -4px  map-get($base, 'base-black');
+	&__logo {
+		display: inline-block;
+		margin: 10px 0 0;
+		@include media('>=desktop') {
+			width: 128px;
+			margin: 0;
+		}
+	}
+	&__nav-principal {
+		right: 0;
+		left: 0;
+		top: -100%;
+		height: 100%;
+		overflow: auto;
+		z-index: 100;
+		@include media('>=tablet') {
+			background: none;
+			position: relative;
+			height: auto;
+			top: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+	}
+	.container {
+		padding: 0 20px;
+	}
+}
