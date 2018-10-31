@@ -4,7 +4,7 @@
 
 * Webpack 4 como gestor de tareas 
 
-* Desarrollo con metodología BEM y usando SASS
+* Desarrollo con metodología BEM y usando SASS y Flexbox
 
 * Responsive con breakpoints en 1024px, 768px y 480px
 

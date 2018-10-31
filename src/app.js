@@ -10,7 +10,7 @@ import slider from './js/modulos/slider';
 import validacion from './js/modulos/validacion';
 
 // importando imagenes
-import logo from './imagenes/logo.png';
+import logo from './imagenes/principal/logo.png';
 import slider1 from './imagenes/slider/avion.jpg';
 import slider2 from './imagenes/slider/avion2.jpg';
 import slider3 from './imagenes/slider/avion3.jpg';
