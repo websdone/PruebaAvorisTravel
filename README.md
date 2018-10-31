@@ -8,11 +8,11 @@
 
 * Responsive con breakpoints en 1024px, 768px y 480px
 
-* Slider con Slick y jQuery
+* Slider con slick-carousel y jQuery
 
 * Modulo parallax y navegacion mobil desarrollado solo con CSS sin uso de Javascript
 
-* Para su uso clonar el repositoorio mediante GIT
+* Para su uso clonar el repositoorio mediante GIT https://github.com/websdone/PruebaAvorisTravel.git
 
 * git clone https://github.com/websdone/PruebaAvorisTravel
  
