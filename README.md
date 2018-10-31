@@ -12,9 +12,7 @@
 
 * Modulo parallax y navegacion mobil desarrollado solo con CSS sin uso de Javascript
 
-* Para su uso clonar el repositoorio mediante GIT https://github.com/websdone/PruebaAvorisTravel.git
-
-* git clone https://github.com/websdone/PruebaAvorisTravel
+* Para su uso clonar el repositoorio mediante git clone https://github.com/websdone/PruebaAvorisTravel.git
  
 * Instalar dependencias con ``` npm install ```
 
