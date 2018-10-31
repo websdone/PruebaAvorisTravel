@@ -14,7 +14,7 @@
 
 * Para su uso clonar el repositoorio mediante GIT
 
-* git clone 
+* git clone https://github.com/websdone/PruebaAvorisTravel
  
 * Instalar dependencias con ``` npm install ```
 
